@@ -1,17 +1,17 @@
-import Todo from '../models/todo';
+import { useContext } from 'react';
 import { TodoItem } from './TodoItem';
 import classes from './Todos.module.css';
+import { TodosContext } from '../store/todos-context';
 
-type todosProps = { todos: Todo[]; deleteHandler: (id: string) => void };
-
-export const Todos = (props: todosProps) => {
+export const Todos = () => {
+  const todosCtx = useContext(TodosContext);
   return (
     <ul className={classes.todos}>
-      {props.todos.map((todo) => (
+      {todosCtx.todos.map((todo) => (
         <TodoItem
           key={todo.id}
           text={todo.text}
-          deleteHandler={props.deleteHandler.bind(null, todo.id)} 
+          deleteHandler={todosCtx.removeTodo.bind(null, todo.id)}
         />
       ))}
     </ul>
