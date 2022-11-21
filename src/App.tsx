@@ -4,6 +4,7 @@ import Todo from './models/todo';
 function App() {
   const todos = [
     new Todo('Learn React'),
+    new Todo('Work out'),
     new Todo('Finish building Ruby Parity Gem'),
   ];
 
