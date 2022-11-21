@@ -1,9 +1,11 @@
-import './App.css';
+import { Todos } from './components/Todos';
 
 function App() {
-  return <div>
-
-  </div>;
+  return (
+    <div>
+      <Todos todos={['Learn Typescript', 'Finish building Ruby Parity Gem']} />
+    </div>
+  );
 }
 
 export default App;
