@@ -6,6 +6,10 @@ React-Ts is simple to-do list prokect that demonstrates working with TypseScript
 
 - **REACT** and **SCSS** and **Typescript**
 
+## Preview
+
+<img src="./src/assets/ts-todo.png">
+
 # Getting Started
 
 _To get a local copy up and running follow these setup steps below._
